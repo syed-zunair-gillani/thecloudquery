@@ -14,6 +14,7 @@ const TemplateThreeCard = ({ image, title, intro, link, category, time, priority
          alt={title}
          width={500} 
          height={300}
+         className="w-full h-auto object-cover"
       />
         <h2 className="post-card-title">{title}</h2>
         {intro && <p className="post-card-intro">{intro}</p>}
