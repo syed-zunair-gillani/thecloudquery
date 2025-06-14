@@ -1,0 +1,70 @@
+.hero{
+ 
+    background: linear-gradient(to right,#ede4d9, #bfab9b );
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 300px;
+    position: relative;
+   
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+   
+    @media only screen and (max-width: 600px) {
+        width: unset
+      
+     }
+    }
+
+    .herotxt{
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 90px 0 90px 0;
+        position: relative;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+        align-items: center;
+         z-index: 2;
+        
+         p{
+            font-size: 16px;
+            line-height: 24px;}
+       
+         @media only screen and (max-width: 600px) {
+            width: 100%;
+            padding: 50px 0 50px 0;
+            
+         }
+        h1{
+        width: 100%;
+
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+            
+            
+        }
+                }
+            
+   
+              
+    }
+    .btn{
+        background-color: #f6f6f6;
+        color: #000;
+        padding: 15px 40px;
+        border-radius: 99px;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        gap: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }

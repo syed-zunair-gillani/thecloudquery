@@ -1,0 +1,107 @@
+
+.featuredHero{
+ 
+    // background: linear-gradient(to right,#ede4d9, #bfab9b );
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    margin-bottom: 60px;
+   // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    display: flex;
+
+   align-items: center;
+    @media only screen and (max-width: 600px) {
+        width: unset;
+        flex-direction: column;
+      
+     }
+    }
+    
+    .featuredHerotxt{
+       
+        margin: 0 auto;
+        padding: 90px 0 90px 0;
+        position: relative;
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+        align-items: flex-start;
+         z-index: 2;
+        text-align: start;
+       
+         
+         @media only screen and (max-width: 600px) {
+            width: 100%;
+            padding: 50px 0 50px 0;
+            align-items: center;
+        
+        text-align: center;
+            
+         }
+        h1{
+        width: 100%;
+
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+            
+            
+        }
+                }
+            
+        p{
+            font-size: 14px;
+            line-height: 20px;
+           max-width: 80%;
+           
+            @media only screen and (max-width: 600px) {
+                font-size: 16px;
+                line-height: 22px;
+                max-width: 100%;
+            }
+        }
+        .tag{
+            //color: #d4a3ba;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .btn{
+            width:fit-content;
+            background-color: #bfab9b;
+            color: #000;
+            padding: 15px 40px;
+            border-radius: 99px;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+           margin-top: 10px;
+           
+            display: flex;
+            gap: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+      
+    }
+    .featuredHeroPost{
+       width: 50%;
+       margin: 0 auto;
+    padding: 20px 0;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        
+        
+    }
+    >div{
+        background-color: #ffffff;
+        padding: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        width: unset;
+    }
+      
+    }
+
+    

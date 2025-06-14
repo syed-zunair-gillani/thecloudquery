@@ -1,0 +1,74 @@
+.toc>h2{
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+
+}
+
+   .tocScroll{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+    padding-inline-start: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 1.1rem;
+    margin-bottom: 32px;
+
+    &::-webkit-scrollbar {
+        height: .5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #d6d3d3;
+        border-radius: 10rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #bfab9b;
+        border-radius: 10rem;
+    }
+
+
+    li{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-radius: 99px;
+        cursor: pointer;
+
+    >a{
+        text-decoration: none;
+        color: #262629;
+        font-weight: 300;
+        text-align: center;
+        
+    }
+        &:hover {
+            background-color: #e0e0e0;
+          }
+      }
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 32px;      // Equal width & height for a circle
+    height: 32px;
+    border-radius: 50%; // Perfect circle
+    background-color: #f2f2f2; // Light gray background
+    cursor: pointer;
+  
+    color: #666; // Softer arrow color
+    border: none;
+  
+    transition: background-color 0.2s, color 0.2s;
+  
+    &:hover {
+      background-color: #e0e0e0; // Slightly darker on hover
+      color: #333; // Darker arrow on hover
+    }
+  }

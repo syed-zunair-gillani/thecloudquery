@@ -1,42 +1,263 @@
+
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-verdana: 'Verdana', sans-serif;
+  --primary-color: #d4a3ba;
+  --secondary-color: #efe7da;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  
+  html, body {
+    overflow-x: hidden; /* Temporarily hide horizontal overflow */
   }
+body{
+    font-family: var(--font-verdana);
+    background-color: #f5f5f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1 {
+   
+    font-size: 38px; /* Decreased by 2px */
+    line-height: 40px; /* Decreased by 2px */
+    font-weight: 700;
+    margin: 0;
+    @media only screen and (max-width: 600px) {
+        font-size: 26px; /* Decreased by 2px */
+        line-height: 28px; /* Decreased by 2px */
+    }
+}
+h2 {
+    font-size: 28px; /* Decreased by 2px */
+    line-height: 32px; /* Decreased by 2px */
+    font-weight: 700;
+    margin: 10px 0;
+    @media only screen and (max-width: 600px) {
+        font-size: 24px; /* Decreased by 2px */
+        line-height: 26px; /* Decreased by 2px */
+    }
+}
+h3 {
+    font-size: 22px; /* Decreased by 2px */
+    line-height: 24px; /* Decreased by 2px */
+    font-weight: 700;
+    margin: 10px 0;
+    @media only screen and (max-width: 600px) {
+        font-size: 18px; /* Decreased by 2px */
+        line-height: 20px; /* Decreased by 2px */
+    }
+}
+h4 {
+    font-size: 20px; /* Decreased by 2px */
+    line-height: 24px; /* Decreased by 2px */
+    font-weight: 600;
+    @media only screen and (max-width: 600px) {
+        font-size: 20px; /* Decreased by 2px */
+        line-height: 22px; /* Decreased by 2px */
+    }
+}
+h5 {
+    font-size: 20px; /* Decreased by 2px */
+    line-height: 24px; /* Decreased by 2px */
+    font-weight: 600;
+    @media only screen and (max-width: 600px) {
+        font-size: 18px; /* Decreased by 2px */
+        line-height: 20px; /* Decreased by 2px */
+    }
+}
+h6 {
+    font-size: 20px; /* Decreased by 2px */
+    line-height: 22px; /* Decreased by 2px */
+    font-weight: 600;
+    @media only screen and (max-width: 600px) {
+        font-size: 16px; /* Decreased by 2px */
+        line-height: 18px; /* Decreased by 2px */
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+}
+p {
+    font-size: 14px; /* Decreased by 2px */
+    line-height: 18px; /* Decreased by 2px */
+    font-weight: 400;
+    margin: 0;
+    color: #000;
+    @media only screen and (max-width: 600px) {
+        font-size: 14px; /* Decreased by 2px */
+        line-height: 16px; /* Decreased by 2px */
+    }
+}
+main {
+    padding: 0 18px;
+    max-width: var(--max-width-page, 960px);
+    margin: 0 auto;
+    flex: 1;
+    
+    @media only screen and (max-width: 600px) {
+        padding: 0 16px;
+    }
+    div:last-child {
+        border-bottom: none;
+    }
+}
+span {
+    font-size: 12px; /* Decreased by 2px */
+    line-height: 14px; /* Decreased by 2px */
+    font-weight: 300;
+    color: #000;
+    @media only screen and (max-width: 600px) {
+        font-size: 10px; /* Decreased by 2px */
+        line-height: 12px; /* Decreased by 2px */
+    }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+
+.search-results {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.card {
+  display: flex;
+  column-gap: 18px;
+  margin-bottom: 24px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
+.card-image {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.card-image-container {
+  width: 160px;
+  height: 120px;
+  position: relative;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 70%;
+}
+
+.card-text {
+  text-decoration: none;
+  color: #252525;
+  overflow: hidden;
+}
+
+.card-text h2 {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-text p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  max-height: 48px;
+  line-height: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-footer {
+  font-size: 12px;
+  color: #A2A2A2;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.card-footer span {
+  margin-right: 5px;
+}
+
+.card-footer span:last-child {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card-image-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card-content {
+    width: 100%;
+    gap: 8px;
+    padding-bottom: 8px;
+  }
+
+  .card-text h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin: 10px 0;
   }
 }
+
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .searchBar {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1rem;
+    width: 200px;
+  }
+  
+  .searchButton {
+    padding: 0.5rem 1rem;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  
+    &:hover {
+      background-color: #005bb5;
+    }
+  }
+
+
+  .post_wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 60px;
+  }
+  

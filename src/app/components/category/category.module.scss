@@ -1,0 +1,22 @@
+.category{
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 0;
+    @media only screen and (max-width: 1024px) {
+       padding: 1rem;
+  
+      }
+}
+
+.articlesList{
+    display: flex;
+    column-gap: 4rem;
+    @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+  
+      }
+      
+}
+.divider{
+border-top: 1px solid #C0CFB2;
+}

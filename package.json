@@ -6,16 +6,29 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:prod": "next build && next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.13.8",
+    "@next/third-parties": "^15.2.3",
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0",
+    "graphql": "^16.11.0",
+    "jsdom": "^26.1.0",
+    "lucide-react": "^0.487.0",
+    "next": "15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.3"
+    "react-icons": "^5.5.0",
+    "sass": "^1.86.0",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "cross-env": "^7.0.3",
     "eslint": "^9",
-    "eslint-config-next": "15.2.3",
-    "@eslint/eslintrc": "^3"
-  }
+    "eslint-config-next": "15.2.3"
+  },
+  "sideEffects": false
 }

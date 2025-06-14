@@ -1,0 +1,94 @@
+.card{
+  display: flex;
+  column-gap: 18px;
+ 
+  //max-height: 120px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  .cardImageImg  {
+     
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+
+    @media only screen and (max-width: 600px) {
+      height: 95%;
+    }
+    >div>img{
+      
+    object-fit: cover;
+    border-radius: 4px;
+    
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      height:200px;
+    }
+    }
+  }
+  
+
+  .cardContent{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   gap:8px;
+   width: 70%;
+    a{
+      text-decoration: none;
+      color:#252525 ;
+      overflow: hidden;
+      h2{
+        font-size:17px;
+        line-height: 22px;
+        font-weight:600;
+        margin: 0;
+        @media only screen and (max-width: 600px) {
+          font-size: 24px; 
+        line-height: 26px;
+        margin: 10px 0;
+        }
+      }
+    
+      p{
+        font-size:14px;
+        font-weight:400;
+        margin: 0;
+        max-height: calc(16px * 3);
+        line-height:16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+      }
+    } 
+  
+    @media only screen and (max-width: 600px) {
+      gap:8px;
+      width: 100%;
+      padding-bottom: 8px;
+      //border-bottom:1px solid #A2A2A2;
+    }
+  }
+
+  .cardFooter{
+    grid-column: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 3;
+
+    font-size: 12px ;
+    color: #A2A2A2;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    
+    >span{
+      margin-right: 5px;
+      &:last-child {
+        margin-left: 5px;
+      }
+    }
+  
+  }
+}

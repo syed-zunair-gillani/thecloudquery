@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.96 27.9">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Montserrat-Regular, Montserrat;
+      }
+
+      .cls-2 {
+        fill: #000;
+        font-size: 25px;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 21.25)"><tspan class="cls-4" x="0" y="0">HOCHZEI</tspan><tspan class="cls-3" x="121.57" y="0">T</tspan><tspan class="cls-4" x="136.9" y="0">S</tspan><tspan class="cls-1" x="152.85" y="0">MODUS</tspan></text>
+</svg>

@@ -1,0 +1,24 @@
+.module{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+   
+    @media only screen and (max-width: 600px) {
+       flex-direction: column;
+    }
+
+    padding-bottom: 30px;
+    border-bottom: 1px solid #bfab9b;
+    margin-bottom: 50px;
+
+
+    h2{
+        font-size: 22px;
+        line-height:24px;
+        
+        @media only screen and (max-width: 600px) {
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+}
